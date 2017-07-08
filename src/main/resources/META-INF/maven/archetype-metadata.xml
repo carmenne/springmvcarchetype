@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="basic">
+	<fileSets>
+		<fileSet filtered="true" packaged="true">
+			<directory>src/main/java</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="true">
+			<directory>src/test/java</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="false">
+			<directory>src/main/webapp</directory>
+			<includes>
+				<include>**/*.xml</include>
+				<include>**/*.jsp</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+	
+	 <requiredProperties>
+        <requiredProperty key="package">
+            <defaultValue>${groupId}.${artifactId}</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+</archetype-descriptor>
